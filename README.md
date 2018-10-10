@@ -13,7 +13,7 @@ With thousands of scans acquired by the laser scanners, the scene contains vario
 
 Please contact [Prof. Uwe Stilla, Dr. Ludwig Hoegner, or Yusheng Xu](http://www.pf.bgu.tum.de/sta.html) for getting this dataset. 
 
-![Illustration](/figure/Reference_BuildingSegmentation.png)
+![Illustration](/figures/Github_TUMGT.png)
 
 ### Reference:
 
