@@ -1,13 +1,14 @@
 # TUM-Semantic-Labeling-Benchmark
 This is the dataset used as the reference for semantic labeling of MLS point clouds
 
-### Manully segmented reference
+### Manully labeled reference
 
 The testing area is the Arcisstrasse along the main entrance of Technical University of Munich (TUM) city campus, which covers
 about an area of around 29000 m2. This dataset is original acquired by [Fraunhofer Institute of Optronics, System Technologies and Image Exploitation (IOSB)](https://www.iosb.fraunhofer.de/servlet/is/71825/). The used point clouds are acquired by two Velodyne HDL-64E mounted at an angle of 35◦ on the front roof of the vehicle. In the following provides sketch about how the two scanners are mounted (Gehrung et al., 2017). The original raw point clouds are also preprocessed by a statistical outlier removal for down-sampling and noise suppressing. The number of points after preprocessing is around 50 million. 
 
+With thousands of scans acquired by the laser scanners, the scene contains various kinds of objects according to the eight semantic classes, including building, hight vegetation, low vegetation, vehicles, man-made terrain, natural terrain, hard scape, and scanning artefacts. For the evaluation process, an accurate manually labeled point cloud for the experimental dataset as ground truth is also generated manully by [Photogrammetry & Remote Sensing](http://www.pf.bgu.tum.de) of TUM. The manual work is conducted following ETH standard (Semantic3D Benchmark), and consumed totally 30 hours. As a consequence, a highly accurate reference of the Arcisstrasse is generated with only a subset of the entire dataset. Besides, an additional reference dataset with instance-level segmented object will come soon, with 817 objects of eight aforementioned classes labeled and segmented. 
 
-With thousands of scans acquired by the laser scanners, the scene contains various kinds of objects according to the eight semantic classes, including building, hight vegetation, low vegetation, vehicles, man-made terrain, natural terrain, hard scape, and scanning artefacts. For the evaluation process, an accurate manually labeled point cloud for the experimental dataset as ground truth is also generated manully by [Photogrammetry & Remote Sensing](http://www.pf.bgu.tum.de) of TUM. The manual work is conducted following ETH standard (Semantic3D Benchmark), and consumed totally 30 hours. As a consequence, a highly accurate reference of the Arcisstrasse is generated with only a subset of the entire dataset.
+[![ScreenShot](/figures/Github_Scan.png)](https://www.iosb.fraunhofer.de/servlet/is/71825/arcisstr_labeled.mp4)
 
 ### Download link
 
