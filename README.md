@@ -18,6 +18,9 @@ Besides, an additional reference dataset with the instance-level segmented objec
 
 Please contact [Prof. Uwe Stilla, Dr. Ludwig Hoegner, or Yusheng Xu](http://www.pf.bgu.tum.de/sta.html) for getting this dataset. 
 
+### Copyright
+The original MLS dataset is copyrighted by Fraunhofer IOSB and it is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
 ### Reference:
 
 Please refer the following publications, if this reference dataset is used in your work:
