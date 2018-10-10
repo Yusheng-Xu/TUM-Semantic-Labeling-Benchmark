@@ -17,8 +17,6 @@ Please contact [Prof. Uwe Stilla, Dr. Ludwig Hoegner, or Yusheng Xu](http://www.
 
 ### Reference:
 
-This reference dataset is original cropped from ETH Zurich [Semantic3D dataset](http://semantic3d.net/), and .
-
 Please refer the following publications, if this reference dataset is used in your work:
 
 ```
