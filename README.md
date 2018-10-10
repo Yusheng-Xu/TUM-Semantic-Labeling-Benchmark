@@ -8,7 +8,7 @@ about an area of around 29000 m2. This dataset is original acquired by [Fraunhof
 
 With thousands of scans acquired by the laser scanners, the scene contains various kinds of objects according to the eight semantic classes, including building, hight vegetation, low vegetation, vehicles, man-made terrain, natural terrain, hard scape, and scanning artefacts. For the evaluation process, an accurate manually labeled point cloud for the experimental dataset as ground truth is also generated manully by [Photogrammetry & Remote Sensing](http://www.pf.bgu.tum.de) of TUM. The manual work is conducted following ETH standard (Semantic3D Benchmark), and consumed totally 30 hours. As a consequence, a highly accurate reference of the Arcisstrasse is generated with only a subset of the entire dataset. Besides, an additional reference dataset with instance-level segmented object will come soon, with 817 objects of eight aforementioned classes labeled and segmented. 
 
-![ScreenShot](/figures/Github_Scan.gif)
+![ScreenShot](/figures/arcisstr_labeled.gif)
 
 ![Illustration](/figures/Github_TUMGT.png)
 
