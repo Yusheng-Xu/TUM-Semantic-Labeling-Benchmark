@@ -41,7 +41,6 @@ Please refer the following publications, if this reference dataset is used in yo
   journal={ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
   volume={4},
   pages={107},
-  year={2017},
-  publisher={Copernicus GmbH}
+  year={2017}
 }
 ```
