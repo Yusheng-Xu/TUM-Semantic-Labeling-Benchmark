@@ -29,7 +29,7 @@ Please refer the following publications, if this reference dataset is used in yo
 @article{sun2018classification,
   title={Classification of mls point clouds in urban scenes using detrended geometric features from supervoxel-based local contexts},
   author={Sun, Z and Xu, Y and Hoegner, L and Stilla, U},
-  journal={ISPRS Annals of Photogrammetry, Remote Sensing \& Spatial Information Sciences},
+  journal={ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences},
   volume={4},
   number={2},
   year={2018}
