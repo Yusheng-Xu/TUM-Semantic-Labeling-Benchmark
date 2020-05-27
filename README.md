@@ -1,5 +1,5 @@
 # TUM-MLS-2016: An Annotated Mobile LiDAR Dataset of the TUM City Campus for Semantic Point Cloud Interpretation in Urban Areas
-his dataset is used as the reference for the semantic labeling of MLS point clouds: TUM-MLS-2016.
+This dataset is used as the reference for the semantic labeling of MLS point clouds: TUM-MLS-2016.
 
 ### Data introduction
 
