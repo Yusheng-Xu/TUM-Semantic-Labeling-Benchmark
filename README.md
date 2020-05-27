@@ -1,4 +1,4 @@
-# TUM-Semantic-Labeling-Benchmark
+# TUM-MLS-2016: An Annotated Mobile LiDAR Dataset of the TUM City Campus for Semantic Point Cloud Interpretation in Urban Areas
 his dataset is used as the reference for the semantic labeling of MLS point clouds: TUM-MLS-2016.
 
 ### Data introduction
@@ -38,6 +38,12 @@ The annotated TUM-MLS-2016 dataset is copyrighted by Fraunhofer IOSB, Ettlingen,
 
 ### Please refer the following publication, if this reference dataset is used in your work:
 ```
+@article{zhu2020tum,
+  title={TUM-MLS-2016: An Annotated Mobile LiDAR Dataset of the TUM City Campus for Semantic Point Cloud Interpretation in Urban Areas},
+  author={Jingwei Zhu,Joachim Gehrung,Rong Huang,Björn Borgmann,Zhenghao Sun,Ludwig Hoegner,Marcus Hebel, Yusheng Xu and Uwe Stilla}
+  journal={Remote Sensing},
+  year={2020}
+}
 @article{xu2019classification,
   title={Classification of LiDAR Point Clouds Using Supervoxel-Based Detrended Feature and Perception-Weighted Graphical Model},
   author={Xu, Yusheng and Ye, Zhen and Yao, Wei and Huang, Rong and Tong, Xiaohua and Hoegner, Ludwig and Stilla, Uwe},
@@ -45,7 +51,6 @@ The annotated TUM-MLS-2016 dataset is copyrighted by Fraunhofer IOSB, Ettlingen,
   year={2019},
   publisher={IEEE}
 }
-
 @article{gehrung2017approach,
   title={An approach to extract moving objects from MLS data using a volumetric background representation},
   author={Gehrung, Joachim and Hebel, Marcus and Arens, Michael and Stilla, Uwe},
