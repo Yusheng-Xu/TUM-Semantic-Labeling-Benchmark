@@ -1,30 +1,42 @@
 # TUM-Semantic-Labeling-Benchmark
-This dataset is used as the reference for the semantic labeling of MLS point clouds
+his dataset is used as the reference for the semantic labeling of MLS point clouds: TUM-MLS-2016.
 
-### Manually labeled reference
+### Data introduction
 
-The testing area is the Arcisstrasse along the main entrance of Technical University of Munich (TUM) city campus, which covers
-about an area of around 29000 m2. This dataset is initially acquired by [Fraunhofer Institute of Optronics, System Technologies and Image Exploitation (IOSB)](https://www.iosb.fraunhofer.de/servlet/is/71825/). Two Velodyne HDL-64E measured the used point clouds mounted at an angle of 35 degrees on the front roof of the vehicle. In the following provides sketch about how the two scanners are mounted (Gehrung et al., 2017). The original raw point clouds are also preprocessed by a statistical outlier removal for down-sampling and noise suppressing. The number of points after preprocessing is around 50 million. 
+The TUM-MLS-2016 data have been acquired in April 2016 by Fraunhofer IOSB with their MODISSA mobile sensor platform in the area of the city campus of Technical University of Munich (TUM) in Munich, Germany. The MODISSA was equipped with two Velodyne HDL-64E LiDAR sensors above the windshield. The LiDAR data were recorded synchronously with position and orientation data of an Applanix POS LV 520 inertial navigation system (INS). All lever arms and boresight directions of the system components had been thoroughly calibrated beforehand[1]. Although the data acquisition is continuous, for convenience and by convention we split the stream of georeferenced 3D points to a sequence of scans of 1/10 second duration, corresponding to single 360 degree scans of the scanner heads rotating at 10 Hz[2].
 
-With thousands of scans acquired by the laser scanners, the scene contains various kinds of objects according to the eight semantic classes, including building, hight vegetation, low vegetation, vehicles, human-made terrain, natural terrain, hardscape, and scanning artifacts. For the evaluation process, an accurate manually labeled point cloud for the experimental dataset as ground truth is also generated manually by [Photogrammetry & Remote Sensing](http://www.pf.bgu.tum.de) of TUM. The manual work is conducted following the ETH standard (Semantic3D Benchmark) and consumed nearly 30 hours. As a consequence, a highly accurate reference of the Arcisstrasse is generated with only a subset of the entire dataset. 
+For the annotation of points, we have manually labeled this area with eight semantic classes following the ETH standard[3] (0: Unlabeled, 1: Artificial Terrain, 2: Natural Terrain, 3: High Vegetation, 4: Low Vegetation, 5: Building, 6: Hardscape, 7: Artefact, and 8: Vehicle) and points of different labels rendered with different colors.
 
-![ScreenShot](/figures/arcisstr_labeled.gif)
+Based on the annotation of points, we created three datasets serving the evaluation of related methods and algorithms, including a benchmark dataset for semantic labeling, test data for instance segmentation, and test data for individual labeled 360 degree scans. These three datasets are related to the two core tasks of semantic interpretation, namely the semantic labeling and object segmentation.
 
-Besides, an additional reference dataset with the instance-level segmented objects will come soon, with 817 objects of eight classes mentioned above labeled and segmented. 
+### Benchmark for semantic labeling
+For generating the benchmark dataset for semantic labeling, we started with re-merging all points of all the georeferenced single scans into a large point cloud. Then, the merged point cloud was preprocessed by the statistical outlier removal (SOR) filter and down-sampled, with duplicated points deleted. Sequentially, the distant points in the scan with a sparse density were cropped and removed. Based on the filtered and cropped point cloud, the total number of annotated points is more than 40 million, and we conducted the annotation of points manually. With these annotated points, we created a benchmark dataset for the evaluation of semantic labeling. Here, only annotated points of the eight semantic classes are kept, and those which belong to the unclassified class are removed. We show the entire annotated benchmark dataset with eight object classes. For evaluation purposes, the entire labeled dataset of the TUM city campus has been evenly divided into three areas according to the covered area size, and the numbers of points in these three areas are around 20 million, 16 million, and 13 million, respectively. In Fig.1 a, the separation of these three areas is displayed. Points of each area are saved in the same .ply files. 
+ {Fig.1}
 
-![Illustration](/figures/Github_TUMGT.png)
+### Annotated data for instance segmentation
 
-### Data acquisition
+Based on the annotated benchmark for semantic labeling, we also conducted an instance segmentation to the labeled points, so that points of the same instance can be separated and assigned with a unique label. 
+{Fig. 2}
 
-Please contact [Prof. Uwe Stilla, Dr. Ludwig Hoegner, or Yusheng Xu](http://www.pf.bgu.tum.de/sta.html) for getting this dataset. 
+### Annotated data for single 360 degree laser scans
 
-### Copyright
-The original MLS dataset is copyrighted by Fraunhofer IOSB and it is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+For the single 360 degree laser scans from both scanners, we conducted a nearest neighbor search for assigning the points sequentially with a possible label, according to the annotated points in the large-scale benchmark dataset.
+For the points in each scan, a point was given the same label as the nearest neighbor in the annotated scene within a given threshold (0.3m). If there are no points found in the given radius, the point was labeled to belong to the unclassified class. In Fig.3, we also provide an illustration of the annotation result of a sequence of single scans with time index of 04068, 04108, 04148, respectively.
+{Fig.3}
 
 ### Reference:
+[1] Diehm AL, Gehrung J, Hebel M, Arens M. (2020) Extrinsic self-calibration of an operational mobile LiDAR system. Eds. International Society for Optics and Photonics, SPIE, 2020, Vol. 11410, pp. 46 – 61.
+[2] Borgmann B, Schatz V, Kieritz H, Scherer-Klöckling C, Hebel M, Arens M. (2018) Data Processing and Recording Using a Versatile Multi-sensor Vehicle. ISPRS Annals of the Photogrammetry, Remote Sensing & Spatial Information Sciences 2018, 4, 21–28
+[3] Hackel T, Savinov N, Ladicky L, Wegne J D, Schindler K, Pollefeys M (2017) Semantic3d. net: A new large-scale point cloud classification benchmark. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2017, Vol. IV-1-W1, pp. 91–98.
 
-Please refer the following publications, if this reference dataset is used in your work:
 
+### Data access
+Please contact Dr. Marcus Hebel or ___ for getting this dataset.
+
+### Copyright
+The annotated TUM-MLS-2016 dataset is copyrighted by Fraunhofer IOSB, Ettlingen, Fraunhofer Institute of Optronics, System Technologies and Image Exploitation and Photogrammetry and Remote Sensing, Technical University of Munich. If this annotated data is used in your work, it is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+### Please refer the following publication, if this reference dataset is used in your work:
 ```
 @article{sun2018classification,
   title={Classification of mls point clouds in urban scenes using detrended geometric features from supervoxel-based local contexts},
