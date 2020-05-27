@@ -11,18 +11,18 @@ Based on the annotation of points, we created three datasets serving the evaluat
 
 ### Benchmark for semantic labeling
 For generating the benchmark dataset for semantic labeling, we started with re-merging all points of all the georeferenced single scans into a large point cloud. Then, the merged point cloud was preprocessed by the statistical outlier removal (SOR) filter and down-sampled, with duplicated points deleted. Sequentially, the distant points in the scan with a sparse density were cropped and removed. Based on the filtered and cropped point cloud, the total number of annotated points is more than 40 million, and we conducted the annotation of points manually. With these annotated points, we created a benchmark dataset for the evaluation of semantic labeling. Here, only annotated points of the eight semantic classes are kept, and those which belong to the unclassified class are removed. We show the entire annotated benchmark dataset with eight object classes. For evaluation purposes, the entire labeled dataset of the TUM city campus has been evenly divided into three areas according to the covered area size, and the numbers of points in these three areas are around 20 million, 16 million, and 13 million, respectively. In Fig.1 a, the separation of these three areas is displayed. Points of each area are saved in the same .ply files. 
- {Fig.1}
+<img src="/figures/Fig1_TUM_Benchmark.png" height="90%" width="90%" >
 
 ### Annotated data for instance segmentation
 
 Based on the annotated benchmark for semantic labeling, we also conducted an instance segmentation to the labeled points, so that points of the same instance can be separated and assigned with a unique label. 
-{Fig. 2}
+<img src="/figures/Fig2_TUM_Instance.png" height="90%" width="90%" >
 
 ### Annotated data for single 360 degree laser scans
 
 For the single 360 degree laser scans from both scanners, we conducted a nearest neighbor search for assigning the points sequentially with a possible label, according to the annotated points in the large-scale benchmark dataset.
 For the points in each scan, a point was given the same label as the nearest neighbor in the annotated scene within a given threshold (0.3m). If there are no points found in the given radius, the point was labeled to belong to the unclassified class. In Fig.3, we also provide an illustration of the annotation result of a sequence of single scans with time index of 04068, 04108, 04148, respectively.
-{Fig.3}
+<img src="/figures/Fig3_TUM_ScansSequence.png" height="90%" width="90%" >
 
 ### Reference:
 [1] Diehm AL, Gehrung J, Hebel M, Arens M. (2020) Extrinsic self-calibration of an operational mobile LiDAR system. Eds. International Society for Optics and Photonics, SPIE, 2020, Vol. 11410, pp. 46 – 61.
