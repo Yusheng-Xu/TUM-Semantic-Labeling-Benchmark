@@ -31,20 +31,19 @@ For the points in each scan, a point was given the same label as the nearest nei
 
 
 ### Data access
-Please contact Dr. Marcus Hebel or ___ for getting this dataset.
+Please contact [Jingwei Zhu](mailto:jingwei.zhu@tum.de?subject=[TUM-MLS-2016]%20Jingwei%20Zhu), [Prof. Uwe Stilla](mailto:stilla@tum.de?subject=[TUM-MLS-2016]%20Uwe%20Stilla), or [Dr. Marcus Hebel](mailto:marcus.hebel@iosb.fraunhofer.de?subject=[TUM-MLS-2016]%20Marcus%20Hebel) for getting this dataset.
 
 ### Copyright
 The annotated TUM-MLS-2016 dataset is copyrighted by Fraunhofer IOSB, Ettlingen, Fraunhofer Institute of Optronics, System Technologies and Image Exploitation and Photogrammetry and Remote Sensing, Technical University of Munich. If this annotated data is used in your work, it is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
 
 ### Please refer the following publication, if this reference dataset is used in your work:
 ```
-@article{sun2018classification,
-  title={Classification of mls point clouds in urban scenes using detrended geometric features from supervoxel-based local contexts},
-  author={Sun, Z and Xu, Y and Hoegner, L and Stilla, U},
-  journal={ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences},
-  volume={4},
-  number={2},
-  year={2018}
+@article{xu2019classification,
+  title={Classification of LiDAR Point Clouds Using Supervoxel-Based Detrended Feature and Perception-Weighted Graphical Model},
+  author={Xu, Yusheng and Ye, Zhen and Yao, Wei and Huang, Rong and Tong, Xiaohua and Hoegner, Ludwig and Stilla, Uwe},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  year={2019},
+  publisher={IEEE}
 }
 
 @article{gehrung2017approach,
