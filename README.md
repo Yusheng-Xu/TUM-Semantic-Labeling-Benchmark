@@ -40,9 +40,13 @@ The annotated TUM-MLS-2016 dataset is copyrighted by Fraunhofer IOSB, Ettlingen,
 ```
 @article{zhu2020tum,
   title={TUM-MLS-2016: An Annotated Mobile LiDAR Dataset of the TUM City Campus for Semantic Point Cloud Interpretation in Urban Areas},
-  author={Zhu, Jingwei and Gehrung, Joachim and Huang, Rong and Borgmann, Björn and Sun, Zhenghao and Hoegner, Ludwig and Hebel, Marcus  and Xu, Yusheng and Stilla, Uwe}
+  author={Zhu, Jingwei and Gehrung, Joachim and Huang, Rong and Borgmann, Bj{\"o}rn and Sun, Zhenghao and Hoegner, Ludwig and Hebel, Marcus and Xu, Yusheng and Stilla, Uwe},
   journal={Remote Sensing},
-  year={2020}
+  volume={12},
+  number={11},
+  pages={1875},
+  year={2020},
+  publisher={Multidisciplinary Digital Publishing Institute}
 }
 @article{xu2019classification,
   title={Classification of LiDAR Point Clouds Using Supervoxel-Based Detrended Feature and Perception-Weighted Graphical Model},
